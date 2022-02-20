@@ -1,6 +1,6 @@
 package ua.lviv.iot.lab1;
 
-record Chainsaw(String name, double powerInV, int numberOfTurnsOfChainPerMinute,
+record Chainsaw(String name,int powerInW, int numberOfTurnsOfChainPerMinute,
 		int busLengthInMm, double weightInKg, double priceInUah) {
 
     private static int id;
@@ -10,19 +10,19 @@ record Chainsaw(String name, double powerInV, int numberOfTurnsOfChainPerMinute,
     }
 
     public Chainsaw() {
-	this("No name", 0.0, 0, 0, 0.0, 0.0);
+	this("No name", 0, 0, 0, 0.0, 0.0);
     }
 
-    public Chainsaw(String name, double powerInV, double weightInKg) {
-	this(name, powerInV, 0, 0, weightInKg, 0.0);
+    public Chainsaw(String name, int powerInW, double weightInKg) {
+	this(name, powerInW, 0, 0, weightInKg, 0.0);
     }
 
     public String toString() {
 	return String.format("\tChainsaw Info\n"+
-			"Name: %s, Power: %.1f V\t\n"+
+			"Name: %s, Power: %d W\n"+
 			"Number of Turns of chain: %d TPM, Bus length: %d mm\n"+ 
-			"Weight: %.1f kg, Price: %.1f uah\t\n",
-			name, powerInV,
+			"Weight: %.1f kg, Price: %.1f uah\n",
+			name, powerInW,
 			numberOfTurnsOfChainPerMinute,busLengthInMm,
 			weightInKg, priceInUah);
 }
