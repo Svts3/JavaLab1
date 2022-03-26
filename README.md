@@ -1,1 +1,1 @@
-# IOT-lab1-java
+# JavaLabs
