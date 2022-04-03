@@ -46,12 +46,12 @@ public class OfficeEquipmentStore {
     public List<Device> sortFoundedDevicesByWeigth(boolean reversed){
 	if(reversed) {
 	foundedDevices = foundedDevices.stream()
-	.sorted(Comparator.comparing(Device::getWeigthInKg).reversed())
+	.sorted(Comparator.comparing(Device::getWeightInKg).reversed())
 	.collect(Collectors.toList());
 	}
 	else {
 	    foundedDevices = foundedDevices.stream()
-		.sorted(Comparator.comparing(Device::getWeigthInKg))
+		.sorted(Comparator.comparing(Device::getWeightInKg))
 		.collect(Collectors.toList());
 	}
 	return foundedDevices;

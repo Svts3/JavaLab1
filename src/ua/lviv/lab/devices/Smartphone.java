@@ -10,10 +10,10 @@ public class Smartphone extends Device {
     private int numberOfFrontCameras;
 
     public Smartphone(String brand, String model, int priceInUah,
-	    double weigthInKg, String cpu, String videoCore,
+	    double weightInKg, String cpu, String videoCore,
 	    int ram, int memory, double screenDiagonal,
 	    int batteryCapacityInMa, int numberOfFrontCameras) {
-	super(brand, model, priceInUah, weigthInKg);
+	super(brand, model, priceInUah, weightInKg);
 	super.setTypeOfDevice(Type.SMARTPHONE);
 	this.cpu = cpu;
 	this.videoCore = videoCore;

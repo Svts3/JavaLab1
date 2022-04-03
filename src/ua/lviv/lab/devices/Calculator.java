@@ -3,8 +3,8 @@ package ua.lviv.lab.devices;
 public class Calculator extends Device{
     private int dimension;
     public Calculator(String brand, String model, int priceInUsd,
-	    double weigth,int dimension) {
-	super(brand, model, priceInUsd, weigth);
+	    double weightInKg,int dimension) {
+	super(brand, model, priceInUsd, weightInKg);
 	super.setTypeOfDevice(Type.CALCULATOR);
 	this.dimension = dimension;
     }

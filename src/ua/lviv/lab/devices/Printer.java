@@ -5,8 +5,8 @@ public class Printer extends Device{
     private int numberOfColors;
     
     public Printer(String brand, String model, int priceInUah,
-	    	double weigth, String printTechnology,int numberOfColors) {
-	super(brand, model, priceInUah, weigth);
+	    	double weightInKg, String printTechnology,int numberOfColors) {
+	super(brand, model, priceInUah, weightInKg);
 	super.setTypeOfDevice(Type.PRINTER);
 	this.printTechnology = printTechnology;
 	this.numberOfColors = numberOfColors;

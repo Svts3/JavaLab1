@@ -5,22 +5,22 @@ public abstract class Device {
     private String brand;
     private String model;
     private int priceInUsd;
-    private double weigthInKg;
+    private double weightInKg;
     public Type typeOfDevice;
     
-    public Device(String brand,String model,int priceInUsd,double weigth) {
+    public Device(String brand,String model,int priceInUsd,double weightInKg) {
 	
 	this.brand = brand;
 	this.model = model;
 	this.priceInUsd = priceInUsd;
-	this.weigthInKg = weigth;
+	this.weightInKg = weightInKg;
 	
     }
     @Override
     public String toString() {
 	return String.format("Brand: %s, model: %s\n"+
-			"Price: %d $, weigth: %.1f Kg\n",
-			brand,model,priceInUsd,weigthInKg);
+			"Price: %d $, weight: %.1f Kg\n",
+			brand,model,priceInUsd,weightInKg);
     }
     
     public Type getTypeOfDevice() {
@@ -45,8 +45,8 @@ public abstract class Device {
         return priceInUsd;
     }
 
-    public double getWeigthInKg() {
-        return weigthInKg;
+    public double getWeightInKg() {
+        return weightInKg;
     }
 
     
