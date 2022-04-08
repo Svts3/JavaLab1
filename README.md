@@ -16,5 +16,3 @@ Create a record class that contains:
 * Enter into `IOT-lab1-java` folder
 * Use ```javac ua/lviv/iot/lab1/*.java``` to compile the both java files
 * Use ```java ua.lviv.iot.lab1.Main``` to run the program
-
-
